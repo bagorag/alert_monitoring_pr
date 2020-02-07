@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 
 import time
-from Boltiot import Bolt
+from boltiot import Bolt
 api_key = "71562afc-e346-4d32-abf8-2038a34a1044"
 device_id = "BOLT5776937"
 mybolt = Bolt( api_key, device_id)
