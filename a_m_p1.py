@@ -14,11 +14,21 @@
 
 # [START gae_flex_quickstart]
 import logging
-
 from flask import Flask
-
-
 app = Flask(__name__)
+
+
+import time
+from Boltiot import Bolt
+api_key = "71562afc-e346-4d32-abf8-2038a34a1044"
+device_id = "BOLT5776937"
+mybolt = Bolt( api_key, device_id)
+response = mybolt.digitalWrite(0,'HIGH')
+print(response)
+time.delay(20)
+response = mybolt.digitalWrite(0,'LOW')
+print(response)
+print("hello")
 
 
 @app.route('/')
