@@ -28,13 +28,13 @@ print(response)
 time.delay(20)
 response = mybolt.digitalWrite(0,'LOW')
 print(response)
-print("hello")
+print("helloo")
 
 
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return 'Hello World!GOVIND'
+    return 'Helloo World!GOVIND'
 
 
 @app.errorhandler(500)
